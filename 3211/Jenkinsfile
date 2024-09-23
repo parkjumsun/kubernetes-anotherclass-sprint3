@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         // 본인의 username으로 하실 분은 수정해주세요.
-        DOCKERHUB_USERNAME = '1pro'
+        DOCKERHUB_USERNAME = 'parkjumsun'
 
         // 배포용 Github - Sprint3의 배포를 Fork 하신 분
         RELEASE_GITHUB_URL = 'https://github.com/k8s-1pro/kubernetes-anotherclass-sprint3.git'
