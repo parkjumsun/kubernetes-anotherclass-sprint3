@@ -1,15 +1,10 @@
 pipeline {
     agent any
 
-    tools {
-        gradle 'gradle-7.6.1'
-        jdk 'jdk-17'
-    }
-
     environment {
         // 본인의 username으로 하실 분은 수정해주세요.
-        DOCKERHUB_USERNAME = '1pro'
-        GITHUB_URL = 'https://github.com/k8s-1pro/kubernetes-anotherclass-sprint3.git'
+        DOCKERHUB_USERNAME = 'parkjumsun'
+        GITHUB_URL = 'https://github.com/parkjumsun/kubernetes-anotherclass-sprint3.git'
 
         // 실습 넘버링
         CLASS_NUM = '3212'
@@ -21,7 +16,7 @@ pipeline {
         stage('소스파일 체크아웃') {
             steps {
                 // 본인의 username으로 하실 분은 수정해주세요.
-                git branch: "${APP_VERSION}", url: 'https://github.com/k8s-1pro/kubernetes-anotherclass-api-tester.git'
+                git branch: "${APP_VERSION}", url: 'https://github.com/parkjumsun/kubernetes-anotherclass-api-tester.git'
             }
         }
 
